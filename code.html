@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>E-Learning Platform</h1>
+        <nav>
+            <ul>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#progress">Progress</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="courses">
+            <h2>Available Courses</h2>
+            <div class="course">
+                <h3>Course Title 1</h3>
+                <p>Description of Course 1.</p>
+                <button onclick="trackProgress('Course Title 1')">Track Progress</button>
+                <button onclick="embedVideo('video_url')">Watch Video</button>
+            </div>
+            <!-- Add more courses similarly -->
+        </section>
+
+        <section id="progress">
+            <h2>Your Progress</h2>
+            <div id="progressTracker"></div>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about the e-learning platform.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 E-Learning Platform</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
